@@ -25,9 +25,13 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
+               "node_modules/fullpage.js/dist/fullpage.min.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+               "node_modules/fullpage.js/dist/fullpage.min.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -96,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

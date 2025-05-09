@@ -1,0 +1,113 @@
+
+/* Main Container */
+.container {
+  min-height: 100vh;
+  padding: 2rem;
+  overflow-x: hidden;    
+  overflow-y: hidden;         
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #fff;
+  color: #333;
+}
+
+/* Prevent body from adding scrollbars */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 80px 91px 78px 180px;
+}
+
+/* Profile Photo */
+.profile-photo-wrapper {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+.firstPage-module--imageShade--3R2d9 {
+  background: rgba(0, 0, 0, 0.05); /* or use: var(--image-shade) if you define it */
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 30%;
+  left: -21%;
+  z-index: 1;
+
+}
+
+/* Make sure image is on top */
+.profile-photo-wrapper img {
+  position: relative;
+  z-index: 2;
+  width: 350px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro Section */
+.intro {
+  flex: 1;
+  min-width: 300px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #171616;
+}
+
+.intro p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #7b7b7b;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+/* Apply the animation to social icons */
+.social-icons {
+  margin-top: 20px; /* nice space after the paragraph */
+  display: flex;
+  justify-content: flex-start; /* align to left */
+  gap: 20px; /* space between icons */
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Style the icons themselves */
+.social-icons a {
+  margin-right: 15px;
+  font-size: 24px;
+  color: #333;
+  opacity: 0; /* start hidden */
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.2s; 
+}
+
+.social-icons a:hover {
+  color: #6c7072;
+}
+
+
