@@ -1,12 +1,13 @@
 <!-- Navbar -->
 <nav class="navbar">
     <div class="navbar-left" >
-      <a routerLink='/'> Abida</a>
+      <a (click)="scrollTo('profile')"> Abida</a>
     </div>
     <div class="navbar-right">
-      <a routerLink="/about" routerLinkActive="active-link">About</a>
-      <a routerLink="/project" routerLinkActive="active-link">Projects</a>
-      <a routerLink="/contact" routerLinkActive="active-link">Contact</a>
+      <a (click)="scrollTo('about')">About</a>
+      <a  (click)="scrollTo('projects')">Projects</a>
+      <a  (click)="scrollTo('experience')">Experience</a>
+      <a  (click)="scrollTo('contact')">Contact</a>
     </div>
   </nav>
 <router-outlet></router-outlet>
