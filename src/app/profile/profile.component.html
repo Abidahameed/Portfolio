@@ -2,26 +2,224 @@
 <!-- Main Content -->
 <div class="container">
   <div class="content">
-    <div class="profile-photo-wrapper">
-      <div class="firstPage-module--imageShade--3R2d9"></div>
-      <img src="/assets/profile.jpg" alt="Profile" />
-    </div>
+    
+    <!-- Left: Text Content -->
     <div class="intro">
-      <h1 class="highlight" > Software Developer</h1>
-      <p>Hey there! I'm Abida, a passionate Frontend Developer currently working at Nomd Technologies in Kochi.</p>
-      <p>I specialize in building responsive, user-centric web applications using Angular, TypeScript, and modern web technologies. I love crafting seamless UI experiences and optimizing performance for real-world business solutions.</p>
+      <h1 class="highlight">Hey there!</h1>
+      <p>I'm Abida, a passionate Software Developer</p>
     </div>
-    <div class="social-icons">
-      <a href="https://github.com/your-github-abidahameed" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/abida-hameed-90572925b" target="_blank">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://twitter.com/AbidaHameed2002" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
+
+    <!-- Right: Background Image -->
+    <div class="background-image">
+      <img src="/assets/background2.png" alt="Profile" />
+    </div>
+
+  </div>
+</div>
+<!-- About Me Section -->
+<div class="about-me-section">
+  <div class="personal-details">
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-me-wrapper">
+    
+    <!-- Left: About Me Text Content -->
+    <div class="about-me-content">
+      <ul>
+        <li>I’m a passionate Frontend Developer with a focus on Angular, TypeScript, and responsive web development.</li>
+        <li>Currently working at Nomd Technologies, where I contribute to scalable applications like fleet management and access control systems.</li>
+        <li>I enjoy creating clean, user-friendly UIs that perform efficiently across all devices.</li>
+        <li>I follow Agile methodologies and actively collaborate in cross-functional teams to deliver real-world solutions.</li>
+        <li>My toolset includes both frontend technologies and design tools, enabling me to bridge the gap between design and development.</li>
+      </ul>
+    </div>
+
+    <!-- Right: Buttons + Social Icons -->
+    <div class="about-me-side">
+    
+  <div class="about-me-buttons">
+    <a href="/assets/ABIDA_PA.pdf" target="_blank" class="btn-primary">
+      <i class="fas fa-eye"></i> View My Resume
+    </a>
+    <a routerLink="/contact" class="btn-secondary">
+      <i class="fas fa-envelope"></i> Contact Me
+    </a>
+  </div>
+      <div class="social-icons">
+        <a href="https://github.com/Abidahameed" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/abida-hameed-90572925b" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/AbidaHameed2002" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+<div class="about-section">
+  
+  <!-- Left Column: Achievements -->
+<div class="about-column-wrapper">
+  <h2 class="about-heading">Achievements & Certifications</h2>
+  <div class="about-column">
+    <ul class="cert-list">
+      <li>
+        <i class="fas fa-certificate"></i> The Angular Complete Guide – Udemy
+      </li>
+      <li>
+        <i class="fas fa-certificate"></i>
+        <a href="https://coursera.org/share/eb1d0d2b3e8a904f12d8399130348021" target="_blank">
+          Programming for Everybody (Python) – University of Michigan
+        </a>
+      </li>
+      <li>
+        <i class="fas fa-certificate"></i> UI/UX Design and Frontend Development (HTML & CSS) – Great Learning
+      </li>
+      <li>
+        <i class="fas fa-certificate"></i>
+        <a href="https://coursera.org/share/03cfdf8eb54a255b25975605fd9fce61" target="_blank">
+          Cloud Computing Basics – Coursera
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+  <!-- Right Column: Skills -->
+  <div class="about-column-wrapper">
+    <h2 class="about-heading">Skills & Technologies</h2>
+    <div class="about-column">
+      <div class="about-icons">
+        <img src="/assets/angular.jpg" alt="Angular" />
+        <img src="/assets/ts.jpg" alt="TypeScript" />
+        <img src="/assets/js.jpg" alt="JavaScript" />
+        <img src="/assets/bootstrap.jpg" alt="Bootstrap" />
+        <img src="/assets/html.jpg" alt="HTML5" />
+        <img src="/assets/css.jpg" alt="CSS3" />
+        <img src="/assets/git.jpg" alt="Git" />
+        <img src="/assets/Bitbucket.jpg" alt="Bitbucket" />
+        <img src="/assets/jira.jpg" alt="JIRA" />
+        <img src="/assets/figma.jpg" alt="Figma" />
+      </div>
     </div>
   </div>
 
 </div>
+
+
+<!-- projects-section -->
+
+<section class="projects-section">
+  <h1>Projects.</h1>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="/assets/cafenest1.png" alt="Project 1" />
+      <h2>CafeNest Ordering System</h2>
+     <p>
+        A sample Angular café ordering system that allows users to browse menu,
+        manage a cart, and place orders. Demonstrates component architecture,
+        routing, and in-memory cart state management—all without backend integration.
+      </p>
+      <div class="project-links">
+        <a href="https://github.com/Abidahameed/CafeNest-cart" target="_blank">GitHub</a>
+        <a href="https://your-live-demo-link.com" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="/assets/vehicle.png" alt="Project 2" />
+       <h2>Vehicle Admin Dashboard</h2>
+      <p>
+        An Angular-based admin panel for managing a vehicle rental service. 
+        Includes features to add, edit, delete, and view vehicle details in a clean UI.
+        Perfect for learning form handling and CRUD operations with Angular.
+      </p>
+      <div class="project-links">
+        <a href="https://github.com/Abidahameed/vehicle-rental-admin-panel" target="_blank">GitHub</a>
+        <a href="https://your-live-demo-link.com" target="_blank">View Project</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- work-experience -->
+<section class="work-experience-section">
+  <h2>Work Experience</h2>
+  <div class="work-experience-wrapper">
+    <div class="vertical-line"></div>
+    <div class="experience-box">
+      <div class="experience-header">
+        <h3>Junior Angular Developer</h3>
+        <p class="company-details">Nomd Technologies | Kochi<br>Aug 2023 – Present</p>
+      </div>
+      <ul>
+        <li>Developed and implemented three core Angular modules (Alert, Asset, and Driver Management) for a Fleet Management System, enhancing user engagement and reducing operational costs.</li>
+        <li>Implemented lazy loading and modular routing, reducing initial load times by 40%.</li>
+        <li>Delivered a user-centric access management application, improving client satisfaction and reducing access issues.</li>
+        <li>Integrated RESTful APIs using RxJS, enabling seamless data flow and reducing data processing time.</li>
+        <li>Led the migration of legacy JavaScript components to TypeScript, improving code maintainability and reducing bugs.</li>
+      </ul>
+
+      <h4 class="project-title">Fleet Management System (FMS)</h4>
+      <ul>
+        <li>Designed and developed a centralized vehicle asset management platform to improve tracking and driver management.</li>
+        <li>Integrated tools for license tracking, work allocation, and feedback to enhance compliance and safety.</li>
+      </ul>
+
+      <h4 class="project-title">AMS - Access Management System</h4>
+      <ul>
+        <li>Contributed to building a secure access system for Qiddiya, streamlining employee and vehicle access workflows.</li>
+        <li>Integrated workflows for ID badge issuance and vehicle sticker processing, enhancing security.</li>
+      </ul>
+
+      <h4 class="project-title">Car Sharing Platform</h4>
+      <ul>
+        <li>Developed a mobile-friendly platform to book, unlock, and monitor vehicles in real-time.</li>
+        <li>Integrated with SAP and automated end-to-end fleet operations.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- contact-container -->
+
+<div class="contact-container">
+    <div class="contact-content">
+      <h2>Contact!</h2>
+      <p>Feel free to reach out if you want to build something together, have a question, or just want to connect.</p>
+      <a href="mailto:abidahameed2002&#64;gmail.com" class="email-link">
+        abidahameed2002&#64;gmail.com
+      </a>
+  
+      <div class="contact-inline">
+        <span><i class="fas fa-phone-alt"></i> +91 81299 75474</span>
+        <span><i class="fas fa-map-marker-alt"></i> Kochi, Kerala</span>
+      </div>
+
+      <!-- <div class="social-icons">
+        <a href="https://github.com/Abidahameed" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/abida-hameed-90572925b" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/AbidaHameed2002" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div> -->
+    </div>
+  </div>
